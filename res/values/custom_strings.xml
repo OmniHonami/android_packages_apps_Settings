@@ -301,4 +301,5 @@
     <string name="adb_paranoid_summary">Immediately reboot if an unknown computer is connected while device is locked</string>
 
     <string name="default_string">Default</string>
+    <string name="xperia_settings">Xperia Settings</string>
 </resources>
