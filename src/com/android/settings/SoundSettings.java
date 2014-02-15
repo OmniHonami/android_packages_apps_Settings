@@ -48,8 +48,6 @@ import android.provider.Settings;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 
-import com.android.settings.widget.SeekBarPreference;
-
 import java.util.List;
 
 import org.omnirom.omnigears.chameleonos.SeekBarPreference;
@@ -101,7 +99,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mDtmfTone;
     private CheckBoxPreference mSoundEffects;
     private CheckBoxPreference mHapticFeedback;
-    private SeekBarPreference mVibrationDuration;
+    private com.android.settings.widget.SeekBarPreference mVibrationDuration;
     private Preference mMusicFx;
     private CheckBoxPreference mLockSounds;
     private Preference mRingtonePreference;
@@ -216,7 +214,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
                 Settings.System.HAPTIC_FEEDBACK_ENABLED, 1) != 0);
         int userMillis = Settings.System.getInt(resolver,
                 Settings.System.MINIMUM_VIBRATION_DURATION, 0);
-        mVibrationDuration = (SeekBarPreference) findPreference(KEY_VIBRATION_DURATION);
+        mVibrationDuration = (com.android.settings.widget.SeekBarPreference) findPreference(KEY_VIBRATION_DURATION);
         mVibrationDuration.setInitValue(userMillis);
         mVibrationDuration.setInterval(1);
         mVibrationDuration.displaySameValue(true);
