@@ -49,9 +49,6 @@
     <string name="advanced_reboot_title">Advanced reboot</string>
     <string name="advanced_reboot_summary">When unlocked, include options in the power menu for rebooting into recovery or bootloader</string>
 
-    <!-- Lockscreen battery ring -->
-    <string name="battery_around_lockscreen_ring">Battery around unlock ring</string>
-
     <!-- Android debugging over WiFi -->
     <string name="adb_over_network">ADB over network</string>
     <string name="adb_over_network_summary">Enable TCP/IP debugging over network interfaces (Wi-Fi, USB networks). This setting is reset on reboot</string>
@@ -118,8 +115,11 @@
     <string name="battery_status_icon_title">Status icon</string>
     <string name="battery_bar">Battery bar</string>
     <string name="battery_bar_percent">Battery bar &amp; percent</string>
+    <string name="battery_percent_then_bar">Battery bar &amp; percent left</string>
     <string name="battery_circle">Battery circle</string>
     <string name="battery_circle_percent">Battery circle &amp; percent</string>
+    <string name="battery_percent_only">Percent only</string>
+    <string name="battery_none">None</string>
 
     <!-- Turn on display when power connected; turn off display when power disconnected -->
     <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
@@ -311,4 +311,5 @@
     <!-- Hostname setting -->
     <string name="device_hostname">Device hostname</string>
 
+    <string name="lockscreen_settings_title">Lockscreen</string>
 </resources>
